@@ -1,0 +1,11 @@
+version: '2'
+services:
+    microserviceone-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/microserviceOne/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=microserviceOne
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
